@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects | Suman Shrestha</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html">Suman Shrestha</a>
+      <button class="menu-button" aria-label="Open navigation" aria-expanded="false">☰</button>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="research.html">Research</a>
+        <a href="projects.html">Projects</a>
+        <a href="documents.html">Documents</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container narrow">
+        <p class="eyebrow">Projects</p>
+        <h1>Research software, analysis workflows, and detector studies.</h1>
+        <p>
+          These pages are written as public summaries. Keep collaboration-internal information,
+          unpublished results, and restricted data out of the public repository.
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container project-stack">
+        <article class="project-panel" id="rgd">
+          <p class="project-label">Physics analysis</p>
+          <h2>CLAS12 Run Group D SIDIS Analysis</h2>
+          <p>
+            A nuclear SIDIS analysis using deuterium, carbon, copper, and tin targets. The
+            workflow includes event selection, electron identification, positive-pion selection,
+            kinematic calculations, detector studies, and extraction of nuclear observables.
+          </p>
+          <div class="tag-row">
+            <span>CLAS12</span><span>SIDIS</span><span>ROOT</span><span>Python</span>
+          </div>
+        </article>
+
+        <article class="project-panel" id="mc">
+          <p class="project-label">Monte Carlo</p>
+          <h2>NUCSIDISGEN Production</h2>
+          <p>
+            Generator integration and large-scale Monte Carlo production for nuclear SIDIS.
+            This work includes event generation, detector simulation, reconstruction, target
+            geometry checks, and acceptance-correction validation.
+          </p>
+          <div class="tag-row">
+            <span>C++</span><span>Fortran</span><span>OSG</span><span>GEMC</span>
+          </div>
+        </article>
+
+        <article class="project-panel" id="software">
+          <p class="project-label">Scientific software</p>
+          <h2>HIPO-to-ROOT Processing Tools</h2>
+          <p>
+            C++ tools for reading CLAS12 HIPO files, filtering events, associating detector-bank
+            information, and producing ROOT TTrees for downstream analysis.
+          </p>
+          <div class="tag-row">
+            <span>HIPO</span><span>C++</span><span>ROOT</span><span>OpenMP</span>
+          </div>
+          <p class="project-link">
+            <a href="https://github.com/suman0725" target="_blank" rel="noopener">View GitHub profile →</a>
+          </p>
+        </article>
+
+        <article class="project-panel">
+          <p class="project-label">Detector calibration</p>
+          <h2>Reference-Time Calibration</h2>
+          <p>
+            Quality-assurance and cut-suggestion tools for reference-time distributions,
+            including multi-page diagnostic plots and parameter-file comparison.
+          </p>
+          <div class="tag-row">
+            <span>Hall C</span><span>Calibration</span><span>ROOT</span>
+          </div>
+        </article>
+
+        <article class="project-panel">
+          <p class="project-label">Detector performance</p>
+          <h2>BMT Efficiency Monitoring</h2>
+          <p>
+            Timeline and efficiency studies for detector performance monitoring, with automated
+            summary tables and diagnostic visualization.
+          </p>
+          <div class="tag-row">
+            <span>CLAS12</span><span>Efficiency</span><span>Monitoring</span>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-wrap">
+      <p>© <span id="year"></span> Suman Shrestha</p>
+      <p>Public summaries only</p>
+    </div>
+  </footer>
+</body>
+</html>
