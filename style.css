@@ -396,3 +396,9 @@ code {
     flex-direction: column;
   }
 }
+.profile-photo {
+  width: 100%;
+  display: block;
+  border-radius: 14px;
+  object-fit: cover;
+}
